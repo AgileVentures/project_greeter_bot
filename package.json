@@ -1,0 +1,22 @@
+{
+  "name": "project_greeter_bot",
+  "version": "0.0.0",
+  "description": "for greeting new members joining a project slack channel",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tansaku/project_greeter_bot.git"
+  },
+  "author": "Sam Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tansaku/project_greeter_bot/issues"
+  },
+  "homepage": "https://github.com/tansaku/project_greeter_bot#readme",
+  "dependencies": {
+    "botkit": "^0.5.5"
+  }
+}
