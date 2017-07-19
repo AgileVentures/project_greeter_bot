@@ -33,18 +33,18 @@ rfm_greet +="\n\nWe would love to hear from you! :simple_smile:"
 
 
 //for testing on staging slack
-const greetings = { 
-                    'C69J9GC1Y': ls_greet, 
-                    'C69J9H6KU': wso_greet, 
-                    'C6ALKE66N': rfm_greet, 
-                  };
-
-// for main AV slack
 // const greetings = { 
-//                     'C0KK907B5': ls_greet, 
-//                     'C029E8G80': wso_greet, 
-//                     'C5LCQSJMA': rfm_greet, 
+//                     'C69J9GC1Y': ls_greet, 
+//                     'C69J9H6KU': wso_greet, 
+//                     'C6ALKE66N': rfm_greet, 
 //                   };
+
+for main AV slack
+const greetings = { 
+                    'C0KK907B5': ls_greet, 
+                    'C029E8G80': wso_greet, 
+                    'C5LCQSJMA': rfm_greet, 
+                  };
 
 controller.on('member_joined_channel', function(bot, message){
   // console.log('member_joined_channel')
