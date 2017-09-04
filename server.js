@@ -22,7 +22,7 @@ var rfm_greet = "Welcome <@USER_NAME> to <#C5LCQSJMA|rundfunk-mitbestimmen>!"
 rfm_greet += "\n\nLearn about the goal of this project by visiting our <https://rundfunk-mitbestimmen.de/|website>"
 rfm_greet += " and our <https://github.com/roschaefer/rundfunk-mitbestimmen|Github page>"
 rfm_greet += "\n- spoiler: it has to do with public broadcasting and digital democracy :wink:"
-rfm_greet += "\n\nFeel free to ask <@U5KPGRGGZ|roschaefer> and @somamo anything. As a start, tell us your interests and what you want to learn."
+rfm_greet += "\n\nFeel free to ask <@U5KPGRGGZ|roschaefer> and <@U5N8PH0G1|katharina> anything. As a start, tell us your interests and what you want to learn."
 rfm_greet +="\n\nJoin us in our <https://www.agileventures.org/events/rundfunk-mitbestimmen-meeting|weekly scrum>"
 rfm_greet +="\n\nWe would love to hear from you! :simple_smile:"
 
