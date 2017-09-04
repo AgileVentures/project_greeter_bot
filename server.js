@@ -52,8 +52,8 @@ controller.on('member_joined_channel', function(bot, message){
   // console.log('member_joined_channel')
   // bot.say({channel: message.channel, text: greet});
   var greet = greetings[message.channel];
-  greet = greet.replace('USER_NAME', message.user);
   if(greet){
+    greet = greet.replace('USER_NAME', message.user);
     bot.reply(message, greet);
   }
 });
