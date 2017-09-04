@@ -33,20 +33,20 @@ wed_greet += "\n\nSetup: https://github.com/WikiEducationFoundation/WikiEduDashb
 wed_greet += "\n\nIf you run into any trouble following the instructions for setting up a dev environment, please say something!"
 
 //for testing on staging slack
-const greetings = { 
-                    'C69J9GC1Y': ls_greet, 
-                    'C69J9H6KU': wso_greet, 
-                    'C6ALKE66N': rfm_greet, 
-                    'C6B7LDG10': wed_greet, 
-                  };
+// const greetings = { 
+//                     'C69J9GC1Y': ls_greet, 
+//                     'C69J9H6KU': wso_greet, 
+//                     'C6ALKE66N': rfm_greet, 
+//                     'C6B7LDG10': wed_greet, 
+//                   };
 
 // // for main AV slack
-// const greetings = { 
-//                     'C0KK907B5': ls_greet, 
-//                     'C029E8G80': wso_greet, 
-//                     'C5LCQSJMA': rfm_greet, 
-//                     'C36MNPWTD': wed_greet
-//                   };
+const greetings = { 
+                    'C0KK907B5': ls_greet, 
+                    'C029E8G80': wso_greet, 
+                    'C5LCQSJMA': rfm_greet, 
+                    'C36MNPWTD': wed_greet
+                  };
 
 controller.on('member_joined_channel', function(bot, message){
   // console.log('member_joined_channel')
