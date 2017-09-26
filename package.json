@@ -4,7 +4,8 @@
   "description": "for greeting new members joining a project slack channel",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node lib/server.js",
+    "test": "mocha test/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,9 @@
   "homepage": "https://github.com/tansaku/project_greeter_bot#readme",
   "dependencies": {
     "botkit": "^0.4.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.0"
   }
 }
