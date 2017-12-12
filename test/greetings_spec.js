@@ -14,6 +14,12 @@ describe('Project Greeter bot', function(){
     expect(greetings).to.have.own.property('C5LCQSJMA');
   });
   it('should have Wiki EDU dashboard channel greeting', function(){
-    expect(greetings).to.have.own.property('C36MNPWTD');
+    expect(greetings).to.have.own.property('C724RCXT7');
+  });
+  it('should have bot dashboard channel greeting', function(){
+    expect(greetings).to.have.own.property('C3ETFTYHK');
+  });
+  it('should have asyncvoter dashboard channel greeting', function(){
+    expect(greetings).to.have.own.property('C2HGJF54G');
   });
 });
