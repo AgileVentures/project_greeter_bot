@@ -7,6 +7,34 @@ Ideally human project maintainers would do this, but we have the problem that Sl
 
 It's all about onboarding people and making them feel welcome, comfortable and giving them the info they need
 
+### Installation
+
+(Fork and) Clone the project to your local machine:
+
+```
+$ git clone https://github.com/AgileVentures/project_greeter_bot
+```
+
+and then install the dependencies
+
+```
+$ npm install
+```
+
+and then run the tests
+
+```
+$ npm test
+```
+
+the system can be started like so:
+
+```
+$ npm start
+```
+
+but it needs a Slack API key set as an env variable to `PROJECT_GREETER_SLACK_BOT_TOKEN`.  Note also that the channel ids are currently hard coded to the relevant channels on the main AV slack instance.  To do a complete round trip test you'll need your own Slack instance and channel ids, or reach out to sam@agileventures.org to get access to the test Slack.
+
 ### Dokku deploy
 
 ```
