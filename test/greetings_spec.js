@@ -16,4 +16,7 @@ describe('Project Greeter bot', function(){
   it('should have Wiki EDU dashboard channel greeting', function(){
     expect(greetings).to.have.own.property('C724RCXT7');
   });
+  it('should have MetPlus dashboard channel greeting', function(){
+    expect(greetings).to.have.own.property('C0VEPAPJP');
+  });
 });
