@@ -18,5 +18,10 @@ describe('Project Greeter bot', function(){
   });
   it('should have MetPlus dashboard channel greeting', function(){
     expect(greetings).to.have.own.property('C0VEPAPJP');
+  it('should have bot dashboard channel greeting', function(){
+    expect(greetings).to.have.own.property('C3ETFTYHK');
+  });
+  it('should have asyncvoter dashboard channel greeting', function(){
+    expect(greetings).to.have.own.property('C2HGJF54G');
   });
 });
