@@ -35,7 +35,13 @@ $ npm start
 
 but it needs a Slack API key set as an env variable to `PROJECT_GREETER_SLACK_BOT_TOKEN`.  Note also that the channel ids are currently hard coded to the relevant channels on the main AV slack instance.  To do a complete round trip test you'll need your own Slack instance and channel ids, or reach out to sam@agileventures.org to get access to the test Slack.
 
+You can create your own slack instance to test, or come to the [#bots channel](https://agileventures.slack.com/messages/bots) on the AV slack to ask @tansaku for a token for the [agileventuresbottest slack](https://join.slack.com/t/agileventuresbottest/shared_invite/enQtMjIwOTkyMTQwNjQ0LWZlMjI4YjA4OGYwZTcxMjRmMzlkZTMzZWU3OWJiOWU5YjA5MzIzZjIxMjUyNzdkY2YxZTlmMTYyY2IxMmMzN2Q).
+
+
+
 ### Dokku deploy
+
+This will only work if you have been given access to our dokku system - this is for advanced users who have demonstrated ongoing committment to the project.
 
 ```
 ssh dokku@agileventures.eastus.cloudapp.azure.com apps:create projectgreeterbot-production
