@@ -70,6 +70,23 @@ and if you join one the channels you should be able to see something like the fo
 
 This will only work if you have been given access to our dokku system - this is for advanced users who have demonstrated ongoing committment to the project.
 
+To make the commands simple, add the following to your ~/.ssh/config
+
+```
+Host avp-dokku
+HostName agileventures-playground.westeurope.cloudapp.azure.com
+User dokku
+```
+Then the following commands (assuming you have the correct ssh key set up) will create an app and allow pushing to the production server via git
+
+```sh
+$ ssh avp-dokku apps:create projectgreeterbot-production # if app not yet created
+$ git remote add projectgreeterbot-production dokku@agileventures-playground.westeurope.cloudapp.azure.com:projectgreeterbot-production    # assuming you are in local directory for this project -- only needed first time
+$ git push projectgreeterbot-production master
+```
+
+### old notes
+
 ```
 ssh dokku@agileventures.eastus.cloudapp.azure.com apps:create projectgreeterbot-production
 ssh dokku@agileventures.eastus.cloudapp.azure.com config:set projectgreeterbot-production PROJECT_GREETER_SLACK_BOT_TOKEN=XXXXX
