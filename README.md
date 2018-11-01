@@ -3,9 +3,15 @@ Project Greeter Bot
 
 The idea behind the project greeter bot is to be able to help new people orient when joining project Slack channels.
 
-Ideally human project maintainers would do this, but we have the problem that Slack doesn't notify channel members when someone joins a channel - and sometimes project maintainers are not around so the idea is that a bot with a canned message might be able to help.
+Ideally human project maintainers would do this, but we have the problem that Slack doesn't actively notify channel members when someone joins a channel - and sometimes project maintainers are not around so the idea is that a bot with a canned message might be able to help.
 
-It's all about onboarding people and making them feel welcome, comfortable and giving them the info they need
+The member joining can be seen if you are in the channel like so:
+
+![](https://dl.dropbox.com/s/m0xdnmtlj1v9g0y/Screenshot%202018-11-01%2013.56.20.png?dl=0)
+
+but unlike new messages, or @name, @here, @channel the join neither highlights the channel, nor adds a number in a circle.
+
+This project is all about onboarding people and making them feel welcome, comfortable and giving them the info they need.  Are bots unfriendly? Should we be notifying real humans to come and welcome folk in?
 
 ### Installation
 
