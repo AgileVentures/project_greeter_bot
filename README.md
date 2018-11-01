@@ -11,6 +11,10 @@ The member joining can be seen if you are in the channel like so:
 
 but unlike new messages, or @name, @here, @channel the join neither highlights the channel, nor adds a number in a circle.
 
+![](https://dl.dropbox.com/s/oz9g2rlylm6x342/Screenshot%202018-11-01%2014.10.13.png?dl=0)
+
+![](https://dl.dropbox.com/s/n8cyiaiz261clw0/Screenshot%202018-11-01%2014.12.19.png?dl=0)
+
 This project is all about onboarding people and making them feel welcome, comfortable and giving them the info they need.  Are bots unfriendly? Should we be notifying real humans to come and welcome folk in?
 
 ### Installation
