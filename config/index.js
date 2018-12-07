@@ -10,8 +10,7 @@ module.exports.config = {
             'CDM5X3TFV': greet.wed,
             'CDNAU3CCB': greet.metplus,
             'CDNDNJPHQ': greet.bot,
-            'CDMRA0DS5': greet.asyncvoter,
-            'CELL38R5X': greet.test
+            'CDMRA0DS5': greet.asyncvoter
         },
         "PROJECT_GREETER_SLACK_BOT_TOKEN": process.env.TOKEN,
     },
