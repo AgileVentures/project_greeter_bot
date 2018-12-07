@@ -4,7 +4,7 @@ module.exports.config = {
      "development": {
         "config_id": "bottest-slack",
         greetings: { 
-            'CDLLCBT4Z': greet.lst, 
+            'CDLLCBT4Z': greet.ls, 
             'CDM8RJUBU': greet.wso, 
             'CDLLCJJGH': greet.rfm, 
             'CDM5X3TFV': greet.wed,
