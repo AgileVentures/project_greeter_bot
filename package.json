@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/tansaku/project_greeter_bot#readme",
   "dependencies": {
-    "botkit": "^0.4.3",
+    "botkit": "^0.6.21",
     "dotenv": "^6.2.0"
   },
   "devDependencies": {
