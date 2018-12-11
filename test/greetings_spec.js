@@ -1,28 +1,29 @@
 const chai = require('chai');
 const expect = chai.expect;
+require("dotenv").config();
 
-const greetings = require('../lib/greetings');
+const config = require('../config').config;
 
 describe('Project Greeter bot', function(){
   it('should have LocalSupport channel greeting', function(){
-    expect(greetings).to.have.own.property('C0KK907B5');
+    expect(config[process.env.NODE_ENV].greetings).to.have.own.property('CDLLCBT4Z');
   });
   it('should have WebSiteOne channel greeting', function(){
-    expect(greetings).to.have.own.property('C029E8G80');
+    expect(config[process.env.NODE_ENV].greetings).to.have.own.property('CDM8RJUBU');
   });
   it('should have Rundfunk Mitbestimmen channel greeting', function(){
-    expect(greetings).to.have.own.property('C5LCQSJMA');
+    expect(config[process.env.NODE_ENV].greetings).to.have.own.property('CDLLCJJGH');
   });
   it('should have Wiki EDU dashboard channel greeting', function(){
-    expect(greetings).to.have.own.property('C724RCXT7');
+    expect(config[process.env.NODE_ENV].greetings).to.have.own.property('CDM5X3TFV');
   });
   it('should have MetPlus dashboard channel greeting', function(){
-    expect(greetings).to.have.own.property('C0VEPAPJP');
+    expect(config[process.env.NODE_ENV].greetings).to.have.own.property('CDNAU3CCB');
   });
   it('should have bot dashboard channel greeting', function(){
-    expect(greetings).to.have.own.property('C3ETFTYHK');
+    expect(config[process.env.NODE_ENV].greetings).to.have.own.property('CDNDNJPHQ');
   });
   it('should have asyncvoter dashboard channel greeting', function(){
-    expect(greetings).to.have.own.property('C2HGJF54G');
+    expect(config[process.env.NODE_ENV].greetings).to.have.own.property('CDMRA0DS5');
   });
 });

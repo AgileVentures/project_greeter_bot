@@ -31,45 +31,35 @@ and then install the dependencies
 $ npm install
 ```
 
-and then run the tests
+This project requires a Slack API key set as an env variable to `TOKEN`.
+
+### Manual Testing
+
+You can get your own test token at [#get tokens](https://api.slack.com/custom-integrations/legacy-tokens) , or come to the [#bots channel](https://agileventures.slack.com/messages/bots) on the AV slack to ask @tansaku for a token for the [agileventuresbottest slack](https://join.slack.com/t/agileventuresbottest/shared_invite/enQtMjIwOTkyMTQwNjQ0LWZlMjI4YjA4OGYwZTcxMjRmMzlkZTMzZWU3OWJiOWU5YjA5MzIzZjIxMjUyNzdkY2YxZTlmMTYyY2IxMmMzN2Q).
+
+To work with the bottest slack you'll need to configure your environment variables:
+
+Create a `.env` file at the root directory and set the following `variables`.
+(See the `.env.sample` file as an example.)
+
+```
+TOKEN=YOUR_OWN_TEST_TOKEN or THE_TOKEN_FOR_BOTTEST_SLACK
+NODE_ENV=development
+
+```
+
+Run and passed the test
 
 ```
 $ npm test
 ```
 
-the system can be started like so:
-
+Then you can start the bot like so:
 ```
 $ npm start
 ```
 
-but it needs a Slack API key set as an env variable to `PROJECT_GREETER_SLACK_BOT_TOKEN`.  Note also that the channel ids are currently hard coded to the relevant channels on the main AV slack instance.  To do a complete round trip test you'll need your own Slack instance and channel ids, or reach out to sam@agileventures.org to get access to the test Slack.
-
-### Manual Testing
-
-You can create your own slack instance to test, or come to the [#bots channel](https://agileventures.slack.com/messages/bots) on the AV slack to ask @tansaku for a token for the [agileventuresbottest slack](https://join.slack.com/t/agileventuresbottest/shared_invite/enQtMjIwOTkyMTQwNjQ0LWZlMjI4YjA4OGYwZTcxMjRmMzlkZTMzZWU3OWJiOWU5YjA5MzIzZjIxMjUyNzdkY2YxZTlmMTYyY2IxMmMzN2Q).
-
-To work with the bottest slack you'll need to replace the greetings constant in the `lib/greetings.js` file with the following:
-
-```js
-const greetings = { 
-  'CDLLCBT4Z': ls_greet, 
-  'CDM8RJUBU': wso_greet, 
-  'CDLLCJJGH': rfm_greet, 
-  'CDM5X3TFV': wed_greet,
-  'CDNAU3CCB': metplus_greet,
-  'CDNDNJPHQ': bot_greet,
-  'CDMRA0DS5': async_greet
-};
-```
-
-Then you can start the bot like so:
-
-```
-PROJECT_GREETER_SLACK_BOT_TOKEN=<INSERT_TOKEN> npm start
-```
-
-and if you join one the channels you should be able to see something like the following from your bot
+and if you join one the channels at the bottest slack you should be able to see something like the following from your bot
 
 ![](https://dl.dropbox.com/s/exayo4cl6g2z7jd/Screenshot%202018-10-25%2016.55.09.png?dl=0)
 
